@@ -1,0 +1,11 @@
+
+syntax = "proto3";
+
+package gtymd1;
+
+option go_package = "github.com/stevenmaharaj/gtydef/gtydef";
+
+enum Exchange {
+  GIO = 0;
+  DBT = 1;
+}

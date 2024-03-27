@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package gtymd1;
+// import "google/protobuf/empty.proto";
+import "protos/ob.proto";
+import "protos/exchange.proto";
+import "protos/ResResp.proto";
+
+option go_package = "github.com/stevenmaharaj/gtydef/gtydef";
+
+enum RequestType {
+  CONNECT = 0;
+  STREAM = 1;
+  DISCONNECT = 2;
+}
+
+message Response { Status status = 1; }
+
+message Request {
+  RequestType requestType = 1;
+  Exchange exchange = 2;
+}
+
+service Gty {
+  rpc Connect(Request) returns (Response) {}
+  rpc StreamObSTIR(Request) returns (stream L1) {}
+}

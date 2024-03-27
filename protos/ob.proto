@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package gty;
+
+option go_package = "github.com/stevenmaharaj/gtydef/gtydef";
+
+message L1 {
+  double bp = 1;
+  double ap = 2;
+  double bv = 3;
+  double av = 4;
+  string sym = 5;
+  string ex = 6;
+  int64 ts = 7;
+}
