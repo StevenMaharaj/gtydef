@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package gtymd1;
+package gty;
 // import "google/protobuf/empty.proto";
 import "protos/ob.proto";
 import "protos/exchange.proto";

@@ -1,7 +1,7 @@
 
 syntax = "proto3";
 
-package gtymd1;
+package gty;
 
 option go_package = "github.com/stevenmaharaj/gtydef/gtydef";
 
